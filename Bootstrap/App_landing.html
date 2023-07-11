@@ -3,11 +3,127 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>App landing Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <style>
+      .jumbotron{
+        background-image: url(j1.jpg);
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 30px;
+        color: white;
+      }
+      .thumb-post{
+        padding: 5%;
+      }
+      #content{
+        text-align: center;
+      }
+      #appstoreicon{
+        width: 200px;
+      }
+      #footer{
+        background-color: rgb(16, 227, 255);
+        padding-top: 150px;
+        text-align: center;
+        margin-top: 50px;
+        padding-bottom: 150px;  
+      }
+
+    </style>
+
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="150">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#jumbotron">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#footer">Download My app</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="email" placeholder="Email" aria-label="Email">
+        <input class="form-control me-2" type="password" placeholder="password" aria-label="password">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron" id="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+
+<div class="container" id="content">
+  <h1>Why this app is awesome</h1>
+  <p>This app is awesome to use</p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 container " id="about">
+  <div class="col">
+    <div class="card h-100 thumb-post">
+      <img src="c0.jpg" class="card-img-top " alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 thumb-post">
+      <img src="c1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 thumb-post ">
+      <img src="c2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <h3>Download the app!</h3>
+  <p>Really, why should I download this app??</p>
+  <p><a href="#"> <img id="appstoreicon" src="a2.jpg"></a></p>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
