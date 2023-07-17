@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Todo list</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="box">
+            <h1> Todo list</h1>
+        </div>
+        <div class="box">
+               <!-- ejes is just avariable to send data into it -->
+               <!-- <% %> should be requires to run js in ejs -->
+                <% for ( var i=0; i<ejes.length; i++){ %>
+                    <div class="item">
+                        <input type="checkbox">
+                        <p> <%= ejes[i].name %> </p>
+                    </div>
+                <% } %>
+
+            <form action="/" method="POST">       <!-- Post is used to pass information form web browser to server-->
+                <input type="text" name="ele1" placeholder="Enter the task">
+                <button type="submit">+</button>
+            </form>
+        </div>
+    </body>
+</html>
